@@ -1,0 +1,95 @@
+/* Main container styling */
+.how-it-works {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .how-it-works h2 {
+    font-size: 20px;
+    display: flex;
+    margin-left: 5%;
+  }
+  
+  .how-it-works h2::before {
+    content: '💡';
+    margin-right: 10px;
+  }
+  
+  /* Info cards container */
+  .info-cards {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Card styling */
+  .card {
+    background-color: #1a1b2d;
+    border-radius: 8px;
+    padding: 20px;
+    width: 220px;
+    text-align: left;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-icon {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: #72c2e8;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+    color: #cccccc;
+  }
+  
+  /* Responsive Design */
+  
+  /* Large screens (laptops/desktops) */
+  @media (min-width: 992px) {
+    .info-cards {
+      gap: 30px;
+    }
+  }
+  
+  /* Medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .card {
+      width: 180px;
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 16px;
+    }
+    .card-text {
+      font-size: 13px;
+    }
+  }
+  
+  /* Small screens (phones) */
+  @media (max-width: 767px) {
+    .info-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+    .card {
+      width: 90%;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .card-title {
+      font-size: 16px;
+    }
+    .card-text {
+      font-size: 14px;
+    }
+  }
+  
